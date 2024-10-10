@@ -1,0 +1,82 @@
+
+html[data-theme="light"], :root {
+    --primary: #79aec8;
+    --secondary: #cf5e12;
+    --accent: #f5dd5d;
+    --primary-fg: #fff;
+    --body-fg: #333;
+    --body-bg: #fff;
+    --body-quiet-color: rgb(0, 0, 0) !important;
+    --body-loud-color: #000;
+    --header-color: rgb(255, 255, 255);
+    --header-branding-color: var(--accent);
+    --header-bg: var(--secondary);
+    --header-link-color: var(--primary-fg);
+    --breadcrumbs-fg: #fff;
+    --breadcrumbs-link-fg: var(--body-bg);
+    --breadcrumbs-bg: #3d5403;
+    --link-fg: #417893;
+    --link-hover-color: #036;
+    --link-selected-fg: var(--secondary);
+    --hairline-color: #e8e8e8;
+    --border-color: #ccc;
+    --error-fg: #ba2121;
+    --message-success-bg: #dfd;
+    --message-warning-bg: #ffc;
+    --message-error-bg: #ffefef;
+    --darkened-bg: #f8f8f8;
+    --selected-bg: #e4e4e4;
+    --selected-row: #ffc;
+    --button-fg: #fff;
+    --button-bg: var(--secondary);
+    --button-hover-bg: #205067;
+    --default-button-bg: #205067;
+    --default-button-hover-bg: var(--secondary);
+    --close-button-bg: #747474;
+    --close-button-hover-bg: #333;
+    --delete-button-bg: #ba2121;
+    --delete-button-hover-bg: #a41515;
+}
+
+#header {
+    background: var(--header-bg);
+    color: var(--header-color);
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--body-quiet-color);
+}
+
+.login #header h1 {
+    color: #fff;
+}
+
+div.breadcrumbs {
+    background: var(--breadcrumbs-bg);
+    padding: 10px 40px;
+    border: none;
+    color: var(--breadcrumbs-fg);
+    text-align: left;
+}
+
+input[type=submit], 
+input[type=button], 
+.submit-row input {
+    width: 100%;
+}
+
+#content-related .module{
+    background: rgba(30, 226, 79, 0.5);
+}
+
+.dashboard #content {
+    width: 700px;
+}
+
+table thead th .text span{
+    color: #417893;
+    font-size: 12px;
+}
